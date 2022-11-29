@@ -51,7 +51,7 @@ const crearTabla = (VoF) => {
    
          divCarrito.innerHTML = `
          <h4 class="nombre-carrito"> ${item.nombre} </h4>
-         <h4 class="precio-carrito"> ${item.precio} </h4>
+         <h4 class="precio-carrito"> $ ${item.precio} </h4>
          `
 
          tabla.insertAdjacentElement('afterend', divCarrito)
@@ -59,7 +59,7 @@ const crearTabla = (VoF) => {
          totalCarrito = carrito.reduce((acum, item) => acum + item.precio, 0);
          precioFinal.innerHTML = `
          <h4 class="nombre-carrito"> Precio Total de la Compra </h4>
-         <h4 class="precio-carrito"> ${totalCarrito} </h4>
+         <h4 class="precio-carrito"> $ ${totalCarrito} </h4>
          `
          seccionCarrito.insertAdjacentElement('beforeend', precioFinal)
       })
@@ -82,7 +82,7 @@ const agregarCarrito = (Anombre, Aprecio) => {
 
       divCarrito.innerHTML = `
       <h4 class="nombre-carrito"> ${Anombre} </h4>
-      <h4 class="precio-carrito"> ${Aprecio} </h4>
+      <h4 class="precio-carrito"> $ ${Aprecio} </h4>
       `
 
       tabla.insertAdjacentElement('afterend', divCarrito)
@@ -91,7 +91,7 @@ const agregarCarrito = (Anombre, Aprecio) => {
    totalCarrito = carrito.reduce((acum, item) => acum + item.precio, 0);
    precioFinal.innerHTML = `
    <h4 class="nombre-carrito"> Precio Total de la Compra </h4>
-   <h4 class="precio-carrito"> ${totalCarrito} </h4>
+   <h4 class="precio-carrito"> $ ${totalCarrito} </h4>
    `
    seccionCarrito.insertAdjacentElement('beforeend', precioFinal)
 
