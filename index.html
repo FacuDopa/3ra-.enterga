@@ -7,12 +7,14 @@
   <meta name="description" content="En esta sección están nuestros productos, con sus descripciones, (medidas, colores)">
   <meta name="keywords" content="PRODUCTOS, CATALOGO, MUEBLE, ARMARIO, REPISA, BAJOMESADAS, MADERA, PINO">
   <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
-  <!-- Link a css -->
-  <link rel="stylesheet" href="./css/estilos.css">
+  <!-- estilos Toastify -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <!-- cdnjs para iconos -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Link a css -->
+  <link rel="stylesheet" href="./css/estilos.css">
 
   <title>CarpinteriaJ&R | Servicios</title>
 </head>
@@ -89,109 +91,7 @@
     </div>
     
     <!-- inicio de cards -->
-    <section class="px-0 mx-0 container-fluid sec-cards row mb-3">
-      <!-- 1ra-card 1ra-fila -->
-      <div class="card border-dark">
-        <img class="card-img-top" src="./img/collage.jpg" alt="rack para tv en madera">
-        <div class="card-body">
-            <h4 class="card-title border-botto">Rack para Tv</h4>
-            <p class="card-text">Rack para Tv con dos cajones superiores y dos puertas con amplio espacio debajo, es a medida.</p>
-            <button id="boton-rack" class="boton-cards">Agregar al carrito</button>
-        </div>
-      </div>
-      <!-- 2da-card 1da-fila -->
-      <div class="card border-dark">
-        <!-- inicio de carrusel -->
-        <div id="demo" class="carousel slide" data-bs-ride="carousel">
-          <!-- indicador de img -->
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-          </div>
-
-          <!-- imagenes del carrusel -->
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="./img/avion.jpg" alt="avion de madera" class="img-fluid d-block">
-            </div>
-            <div class="carousel-item">
-              <img src="./img/avion2.jpg" alt="avion de madera" class="img-fluid d-block">
-            </div>
-            <div class="carousel-item">
-              <img src="./img/avion3.jpg" alt="avion de madera" class="img-fluid d-block">
-            </div>
-          </div>
-
-          <!-- flechas de izquierda y derecha -->
-          <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-          </button>
-        </div>
-        <!-- fin del carusel -->
-        <div class="card-body">
-          <h4 class="card-title border-botto">Avión de juguete.</h4>
-          <p class="card-text">Resistente, no tiene piezas movibles, ideal para chicos pequeños</p>
-          <button id="boton-avion" class="boton-cards">Agregar al carrito </button>
-        </div>
-      </div>
-      <!-- 3ra-card 1ra-fila -->
-      <div class="card border-dark">
-        <img class="card-img-top" height="374" src="./img/banco.jpg" alt="banco bajo">
-        <div class="card-body">
-          <h4 class="card-title border-botto">Banco</h4>
-          <p class="card-text">Banco de 4 patas, con base redonda, es bajo, disponible en varios colores.</p>
-          <button id="boton-banco" class="boton-cards"> Agregar al carrito </button>
-        </div>
-      </div>
-      <!-- 4-card 1ra-fila -->
-      <div class="card border-dark">
-        <img class="card-img-top" height="374" src="./img/Cajon.jpg" alt="mesita de luz con cajon">
-        <div class="card-body">
-          <h4 class="card-title border-botto">Mesita de luz</h4>
-          <p class="card-text">Mesita de luz con un cajón con manija.</p>
-          <button id="boton-mesita" class="boton-cards"> Agregar al carrito </button>
-        </div>
-      </div>
-      <!-- 1ra-card  2da-fila -->
-      <div class="card border-dark">
-        <img class="card-img-top" height="374" src="./img/lapicero.jpeg" alt="lapicero en madera" style="object-fit: cover;">
-        <div class="card-body">
-          <h4 class="card-title border-botto">Lapicero</h4>
-          <p class="card-text">Lapicero con 3 espacios, el color se puede modificar.</p>
-          <button id="boton-lapicero" class="boton-cards"> Agregar al carrito </button>
-        </div>
-      </div>
-      <!-- 2da-card  2da-fila -->
-      <div class="card border-dark">
-        <img class="card-img-top" height="374" src="./img/camion.jpeg" alt="maseta con protector interior">
-        <div class="card-body">
-          <h4 class="card-title border-botto">Camión de juguete</h4>
-          <p class="card-text">Camión de madera para chicos, puede ir barnizado y/o pintado.</p>
-          <button id="boton-camion" class="boton-cards"> Agregar al carrito </button>
-        </div>
-      </div>
-      <!-- 3ra card  2da-fila -->
-      <div class="card border-dark">
-        <img class="card-img-top" height="374" src="./img/porta-auris.jpg" alt="porta auriculares - lapicero">
-        <div class="card-body">
-          <h4 class="card-title border-botto">Soporte para Auricular</h4>
-          <p class="card-text">Incluye el soporte para el auricular junto con 4 lapiceros y 2 espacios para uso general.</p>
-          <button id="boton-auricular" class="boton-cards"> Agregar al carrito </button>
-        </div>
-      </div>
-      <!-- 4ta card  2da-fila -->
-      <div class="card border-dark">
-        <img class="card-img-top" height="374" src="./img/macetero.jpeg" alt="mesita de luz con cajon">
-        <div class="card-body">
-          <h4 class="card-title border-botto">Maceta</h4>
-          <p class="card-text">Maceta de madera, puede ir pintada y/o barizada,contiene pintura protectora por dentro.</p>
-          <button id="boton-maceta" class="boton-cards"> Agregar al carrito </button>
-        </div>
-      </div>
+    <section id="seccion-cards" class="px-0 mx-0 container-fluid sec-cards row mb-3">
     </section>
     <!-- fin de las cards -->
 
@@ -223,12 +123,17 @@
       </div>
     </section>
   </footer>
-
-  <!-- script js -->
-  <script src="./js/main.js"></script>
-
+  
   <!-- script de bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-
+  
+  <!-- libreria de Toastify -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  
+  <!-- sweet-alert -->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  
+  <!-- script js -->
+  <script src="./js/main.js"></script>
 </body>
 </html>

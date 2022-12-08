@@ -3,6 +3,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
+// estilos alerta de Toastify
+.noti-toastify{
+  border-radius: 15px;
+  background: goldenrod;
+
+  .toast-close{
+    font-family: none;
+    color: black;
+    font-size: 20px;
+    right: 0px;
+  }
+}
+
+// alerta del Sweet-Alert
+.swal2-popup{
+  border: 2px solid black !important;
+  border-radius: 15px !important;
+  background-image: url(../img/fondo-svg1.svg) !important;
+}
+
 // Inicio de variables
 
 // color letras barra de navegacion
@@ -344,10 +364,6 @@ h1{
             transition: transform 0.7s;
           }
         }
-
-        &:hover{
-
-        }
       }
       // media querie
       @media screen and (min-width: $menos-rec) {
@@ -407,6 +423,15 @@ h1{
     .div-carrito{
       display: flex;
       justify-content: center;
+      padding-top: 6px;
+
+      @media screen and (min-width: $menos-rec) {
+        &:hover{
+          background-color: rgb(164, 119, 42);
+          box-shadow: 0 0 4px 1px rgb(173, 181, 189);
+          transition: 0.7s;
+        }
+      }
       
       .nombre-carrito{
         width: 50%;
